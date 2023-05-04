@@ -25,6 +25,6 @@ public class Classwork3_1 {
 
         System.out.println();
 
-
+        System.out.println(1.3%5);
     }
 }
