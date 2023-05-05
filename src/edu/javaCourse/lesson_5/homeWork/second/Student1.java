@@ -9,8 +9,18 @@ public class Student1 {
     double averageGradeInEconomy;
     double averageGradeInForeignLanguage;
 
-    public double averageGrade (double avMath , double avEcon, double avForLen){
-        return (avMath+avEcon+avForLen)/3;
+    public Student1(int studentId, String firstName, String lastName, int academicLevel, double averageGradeInMath, double averageGradeInEconomy, double averageGradeInForeignLanguage) {
+        this.studentId = studentId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.academicLevel = academicLevel;
+        this.averageGradeInMath = averageGradeInMath;
+        this.averageGradeInEconomy = averageGradeInEconomy;
+        this.averageGradeInForeignLanguage = averageGradeInForeignLanguage;
+    }
+
+    public double averageGrade (Student1 student){
+        return (averageGradeInMath+averageGradeInEconomy+averageGradeInForeignLanguage)/3;
     }
 
 
