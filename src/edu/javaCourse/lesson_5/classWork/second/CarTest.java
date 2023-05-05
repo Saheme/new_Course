@@ -1,7 +1,5 @@
 package edu.javaCourse.lesson_5.classWork.second;
 
-import edu.javaCourse.lesson_4.classwork.second.Car;
-
 public class CarTest {
     public static void main(String[] args) {
         Car1 car = new Car1();

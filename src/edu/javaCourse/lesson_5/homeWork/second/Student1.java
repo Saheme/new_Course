@@ -20,7 +20,7 @@ public class Student1 {
     }
 
     public double averageGrade (Student1 student){
-        return (averageGradeInMath+averageGradeInEconomy+averageGradeInForeignLanguage)/3;
+        return (student.averageGradeInMath+student.averageGradeInEconomy+student.averageGradeInForeignLanguage)/3;
     }
 
 
