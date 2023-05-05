@@ -1,6 +1,6 @@
-package edu.javaCourse.lesson_4.homework;
+package edu.javaCourse.lesson_5.homeWork.second;
 
-public class Student {
+public class Student1 {
     int studentId;
     String firstName;
     String lastName;
@@ -8,4 +8,10 @@ public class Student {
     double averageGradeInMath;
     double averageGradeInEconomy;
     double averageGradeInForeignLanguage;
+
+    public double averageGrade (double avMath , double avEcon, double avForLen){
+        return (avMath+avEcon+avForLen)/3;
+    }
+
+
 }
