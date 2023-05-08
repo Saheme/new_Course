@@ -21,18 +21,18 @@ public class Student {
     }
 
     public static void compareFieldsStudents(Student st1, Student st2) {
-        if (st1.name == st2.name) {
-            if (st1.course > st2.course) {
-                if (st1.grade > st2.grade) {
-                    System.out.println("Курс выше , оценки выше у первого студента");
+        if (st1.name.equals(st2.name)) {
+            if (st1.course == st2.course) {
+                if (st1.grade == st2.grade) {
+                    System.out.println("Имена студентов курсы и оценки одинаковые");
                 } else {
-                    System.out.println("Курс выше , оценки хуже у первого студента");
+                    System.out.println("Имена студентов курсы одинаковые , оценки разные");
                 }
             } else {
-                System.out.println("Курс младше у первого студента");
+                System.out.println("Имена студентов одинаковые , курсы разные");
             }
         } else {
-            System.out.println("У них разные фамилии");
+            System.out.println("Имена студентов разные");
         }
     }
 }
