@@ -15,6 +15,7 @@ public class Month {
             case 10 -> System.out.println("October - contain 31 days");
             case 11 -> System.out.println("November - contain 30 days");
             case 12 -> System.out.println("December - contain 31 days");
+            default -> System.out.println("There isn't so month.");
         }
     }
 
@@ -23,6 +24,7 @@ public class Month {
             case 1, 3, 5, 7, 8, 10, 12 -> System.out.println("This month contain 31 days");
             case 4, 6, 9, 11 -> System.out.println("This month contain 30 days");
             case 2 -> System.out.println("This month contain 28 or 29 days");
+            default -> System.out.println("There isn't so month.");
         }
     }
 }
