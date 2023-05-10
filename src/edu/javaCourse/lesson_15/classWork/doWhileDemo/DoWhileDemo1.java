@@ -1,4 +1,4 @@
-package edu.javaCourse.lesspn_15.classWork.doWhileDemo;
+package edu.javaCourse.lesson_15.classWork.doWhileDemo;
 
 public class DoWhileDemo1 {
     public static void main(String[] args) {

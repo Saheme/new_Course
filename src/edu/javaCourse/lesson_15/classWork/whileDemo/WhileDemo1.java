@@ -1,4 +1,4 @@
-package edu.javaCourse.lesspn_15.classWork.whileDemo;
+package edu.javaCourse.lesson_15.classWork.whileDemo;
 
 public class WhileDemo1 {
     public static void main(String[] args) {

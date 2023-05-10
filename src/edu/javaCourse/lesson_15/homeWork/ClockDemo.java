@@ -1,4 +1,4 @@
-package edu.javaCourse.lesspn_15.homeWork;
+package edu.javaCourse.lesson_15.homeWork;
 
 public class ClockDemo {
    public static void clock(){
