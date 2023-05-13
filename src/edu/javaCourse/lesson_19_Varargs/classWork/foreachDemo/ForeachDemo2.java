@@ -1,4 +1,4 @@
-package edu.javaCourse.lesson_19_Varargs.classWork;
+package edu.javaCourse.lesson_19_Varargs.classWork.foreachDemo;
 
 public class ForeachDemo2 {
     public static void main(String[] args) {
