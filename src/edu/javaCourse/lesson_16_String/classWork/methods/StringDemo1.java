@@ -13,7 +13,7 @@ public class StringDemo1 {
         System.out.println("---------------------------");
 
         // 2.метод charAt(int index) -> char , показывает какой char эллемет находится в заданном индексе в строке
-        char c = s1.charAt(2);
+        char c = s1.charAt(6);
         System.out.println("Второй эллемент в строке, символ : " + c);
 
         System.out.println("---------------------------");
@@ -28,7 +28,7 @@ public class StringDemo1 {
         int i3 = s1.indexOf('!', 3); //начинает поиск char или String с определенного индекса
         System.out.println(i3);
 
-        int i4 = s1.indexOf("!", 4); //начинает поиск char или String с определенного индекса
+        int i4 = s1.indexOf("lo", 4); //начинает поиск char или String с определенного индекса
         System.out.println(i4);
 
         System.out.println("---------------------------");

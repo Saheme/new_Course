@@ -3,6 +3,7 @@ package edu.javaCourse.lesson_16_String.classWork.methods;
 public class StringDemo2 {
     public static void main(String[] args) {
         String s1 = new String("!Hello!");
+        String s2 = "    World of something     ";
 
         //6. метод substring() -> String , возвращает кусок строки с заданного индекса и до конца строки.
         // перегруженный(overload) задает рамки с какого по какой символ выводить кусок строки, конечный индекс включен не будетю
@@ -14,7 +15,6 @@ public class StringDemo2 {
         System.out.println("------------------");
 
         // 7. trim -> String, убирает пробелы с боков от ковычек до первого и  до последнего символа, не трогает пробелы, которые внутри строки.
-        String s2 = "    World of something     ";
         String str3 = s2.trim();
         System.out.println(str3);
 
@@ -29,7 +29,7 @@ public class StringDemo2 {
 
         System.out.println("------------------");
 
-        //9. метод concat() -> String, к строке прибавляет другую строку , заданную в параметрах
+      //9. метод concat() -> String, к строке прибавляет другую строку , заданную в параметрах
         String str6 = s1.concat(s2);
         System.out.println(str6);
 

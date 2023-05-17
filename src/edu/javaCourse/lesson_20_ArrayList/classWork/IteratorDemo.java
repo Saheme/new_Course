@@ -18,8 +18,8 @@ public class IteratorDemo {
 
         Iterator<String> it = list.iterator();
         while (it.hasNext()){
-            it.next();
-            it.remove();
+
+            System.out.println( it.next());
 
         }
 

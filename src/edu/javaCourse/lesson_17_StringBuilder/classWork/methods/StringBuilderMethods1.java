@@ -7,18 +7,18 @@ public class StringBuilderMethods1 {
         StringBuilder sb1 = new StringBuilder("Good day!");
         StringBuilder sb3 = new StringBuilder(50);
 
-        //1 метод length() -> int, возвращает длинну  StringBuilder
+     /*  //1 метод length() -> int, возвращает длинну  StringBuilder
         System.out.println(sb1.length());
         System.out.println(sb3.length());
 
         System.out.println("-------------");
 
-        //2. charAt(int index) -> char, показывает какой char эллемет находится в заданном индексе в StringBuilder
-        System.out.println(sb1.charAt(8));
+      //2. charAt(int index) -> char, показывает какой char эллемет находится в заданном индексе в StringBuilder
+        System.out.println(sb1.charAt(6));
 
         System.out.println("-------------");
 
-        //3. метод indexOf(4 перезаписанных метода overload) -> int , показывает на каком индексе находится определенный char или String , и выдает -1 если символ отсутствует
+        //3. метод indexOf(4 перезаписанных метода overload) -> int , показывает на каком индексе находится определенный String , и выдает -1 если символ отсутствует
         System.out.println(sb1.indexOf("o", 2));
 
         System.out.println("-------------");
@@ -34,7 +34,7 @@ public class StringBuilderMethods1 {
         //5. метод subSequence(int start, int end) -> CharSequence, работает почти как substring(), на выходе последовательность char
         System.out.println(sb1.subSequence(1, 6));
 
-        System.out.println("-------------");
+        System.out.println("-------------");*/
 
         //6. метод append(dataType dt)-> StringBuilder, в конец строки StringBuilder добавляет значение (типов значений много)
         // Меняется уже имеюшийся StringBuilder, без создания нового

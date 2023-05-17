@@ -23,9 +23,9 @@ public class StringDemo3 {
         System.out.println("------------------");
 
         // ниже показан метод chaning который звдвет порядок выполнения методов через точку слева направо
-        String st1 = "   Hello World!  ";
-        String st2 = "I 'm a pilot ";
-        String st3 = st1.concat(st2).trim().replace("I 'm a pilot", "I'm foolish").substring(3, 20);
+        String st1 = "   Hello World!";
+        String st2 = "I'm a pilot ";
+        String st3 = st1.concat(st2).trim().replace("I'm a pilot", "I'm foolish").substring(3, 20);
         System.out.println(st3);
 
         System.out.println(st1.substring(st1.indexOf('W')));
