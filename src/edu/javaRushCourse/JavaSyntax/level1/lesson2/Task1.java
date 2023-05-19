@@ -1,4 +1,4 @@
-package edu.javaRushCourse.JavaSyntax.level1.lessen2;
+package edu.javaRushCourse.JavaSyntax.level1.lesson2;
 
 /**
  * Напиши программу, которая выводит на экран надпись: "Диего + Амиго = Друзья".
