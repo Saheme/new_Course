@@ -22,7 +22,7 @@ public class Methods2 {
         }
 
         System.out.println("\n------------------");
-        list.addAll(3,list2);
+        list.addAll(1,list2);
 
         for (String s : list) {
             System.out.print( s + " ");
@@ -34,7 +34,7 @@ public class Methods2 {
             System.out.print( s + " ");
         }
         System.out.println("\n------------------");
-        //6 clear(), очищает лист
+       //6 clear(), очищает лист
         list2.clear();
         for (String s : list2) {
             System.out.print( s + " ");

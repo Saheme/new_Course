@@ -15,12 +15,14 @@ public class Methods6 {
         list.add(s4);
         list.add(s2);
         System.out.println(list);
+        System.out.println("------------------------");
 
         //16 Collections.sort(ArrayList <DataType>)-> void, сортирует массив
-       // Collections.sort(list);
+        Collections.sort(list);
         System.out.println(list);
+        System.out.println("-----Collections----------");
 
-        //17 equals(ArrayList<DataType>)->boolean, сравнивает объекты ArrayList
+        //17 equals(ArrayList<DataType>)-> , сравнивает объекты ArrayList
         ArrayList<String> list2 = list;
         System.out.println(list2.equals(list));
         ArrayList<String> list3 = new ArrayList<>();

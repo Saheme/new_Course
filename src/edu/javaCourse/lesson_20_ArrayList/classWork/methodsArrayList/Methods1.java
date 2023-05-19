@@ -35,11 +35,11 @@ public class Methods1 {
         //   remove(int index) -> DataType, удаляет элемент по индексу
 
         list.remove("Hello!");
-        for (String s: list) {
-            System.out.println(s + " ");
+        for (String s : list) {
+            System.out.print(s + " ");
         }
-            System.out.println();
-       list.remove(2);
+        System.out.println();
+        list.remove(2);
         for (String value : list) {
             System.out.print(value + " ");
         }

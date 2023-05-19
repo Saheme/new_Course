@@ -14,6 +14,6 @@ public class VarargsDemo {
     }
 
     public static void main(String[] args) {
-        sum("Summa = ",5,5,5,7,8);
+        sum("Summa = ",7,5);
     }
 }

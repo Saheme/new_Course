@@ -17,7 +17,7 @@ public class Example1 {
         }
         for (StringBuilder sb : list) {
 
-            System.out.print(list + " ");
+            System.out.print(sb + " ");
         }
     }
 }

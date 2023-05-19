@@ -11,7 +11,29 @@ public class Methods3 {
         list.add(1, "month");
         list.add("monster");
 
+        System.out.println("\n-------7 метод-------");
+
         //7. indexOf(Object element)-> int, по значению первый элемента возвращает индекс в котором храниться элемент
+        StringBuilder sb1 = new StringBuilder("A");
+        StringBuilder sb2 = new StringBuilder("B");
+        StringBuilder sb3 = new StringBuilder("C");
+        StringBuilder sb4 = new StringBuilder("B");
+        ArrayList<StringBuilder> list2 = new ArrayList<>();
+        list2.add(sb1);
+        list2.add(sb2);
+        list2.add(sb3);
+        list2.add(sb4);
+        for (StringBuilder str: list2) {
+            System.out.print(str + " ");
+        }
+        System.out.println();
+        System.out.println(list2.indexOf(new StringBuilder("B")));
+        System.out.println(list2.indexOf("B"));
+
+        System.out.println(list.indexOf("monster"));
+        System.out.println(list.lastIndexOf("monster"));
+
+        System.out.println("\n-------8 метод-------");
         //8.
         System.out.println(list.indexOf("monster"));
         System.out.println(list.lastIndexOf("monster"));
