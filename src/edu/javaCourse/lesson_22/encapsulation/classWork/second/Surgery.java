@@ -1,4 +1,4 @@
 package edu.javaCourse.lesson_22.encapsulation.classWork.second;
 
-public class Surgery extends Doctor{
+public class Surgery extends Doctor {
 }
