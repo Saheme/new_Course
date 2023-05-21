@@ -1,4 +1,4 @@
-package edu.javaRushCourse.JavaSyntax.level2.lesson8.scaner;
+package edu.javaRushCourse.JavaSyntax.level2.lesson8.scanner;
 
 import java.util.Scanner;
 
