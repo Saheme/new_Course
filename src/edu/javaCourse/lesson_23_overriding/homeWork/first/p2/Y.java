@@ -3,7 +3,7 @@ package edu.javaCourse.lesson_23_overriding.homeWork.first.p2;
 import edu.javaCourse.lesson_23_overriding.homeWork.first.p1.X;
 
 /**
- * Y
+ * не скомпилируется т.к вконструктор суперкласса вуащде и не виден в другом пакете
  */
 public class Y extends X {
     public Y(){
