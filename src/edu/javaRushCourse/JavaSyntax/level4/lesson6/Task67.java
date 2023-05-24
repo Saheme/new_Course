@@ -1,4 +1,4 @@
-package edu.javaRushCourse.JavaSyntax.level4.lesson_6;
+package edu.javaRushCourse.JavaSyntax.level4.lesson6;
 
 import java.util.Scanner;
 
@@ -21,11 +21,11 @@ public class Task67 {
         int multiple = scanner.nextInt();
 
         int sum = 0;
-        for (int i = start; i < end; start++) {
-            if ((start % multiple) == 0) {
-                sum += start;
+        for (int i = start; i < end; i++) {
+            if ((i % multiple) == 0) {
+                sum += i;
+            }else
                 continue;
-            }
         }
         System.out.println(sum);
     }

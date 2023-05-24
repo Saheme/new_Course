@@ -1,4 +1,4 @@
-package edu.javaRushCourse.JavaSyntax.level4.lesson_6.examples;
+package edu.javaRushCourse.JavaSyntax.level4.lesson6.examples;
 
 import java.util.Scanner;
 

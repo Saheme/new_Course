@@ -1,4 +1,4 @@
-package edu.javaRushCourse.JavaSyntax.level4.lesson_6;
+package edu.javaRushCourse.JavaSyntax.level4.lesson6;
 
 /**
  * Напиши программу, в которой с помощью цикла for на экран будут выведены чётные числа от 1 до 15.
