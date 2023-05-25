@@ -4,7 +4,7 @@ package edu.javaRushCourse.JavaSyntax.level6.lesson2;
  * Реализовать метод main(String[]), в котором нужно скопировать содержимое массивов firstArray и secondArray в один массив resultArray.
  * Массив firstArray должен быть в начале нового массива resultArray, а secondArray — после него.
  * Программа должна правильно обрабатывать массивы любой длины.
- *
+ * <p>
  * Требования:
  * •	В классе Solution должна быть публичная статическая переменная firstArray типа int[], проинициализированная массивом с 10-ю значениями.
  * •	В классе Solution должна быть публичная статическая переменная secondArray типа int[], проинициализированная массивом с 10-ю значениями.
@@ -18,18 +18,21 @@ public class Task91 {
 
     public static void main(String[] args) {
         int length = secondArray.length + firstArray.length;
-        int firstLength = firstArray.length;
+
         resultArray = new int[length];
-       /* for (int i = 0; i < firstArray.length; i++) {
+        int firstArrayLength = firstArray.length;
+        resultArray = new int[length];
+        for (int i = 0; i < firstArray.length; i++) {
             resultArray[i] = firstArray[i];
-            }*/
-        for (int j = 9;  j >=0 ;j-- ) {
-
         }
-
-
+        for (int j = 0; j < secondArray.length; j++) {
+            resultArray[firstArrayLength] = secondArray[j];
+            firstArrayLength++;
+        }
         for (int i = 0; i < resultArray.length; i++) {
             System.out.print(resultArray[i] + ", ");
         }
+
+
     }
 }

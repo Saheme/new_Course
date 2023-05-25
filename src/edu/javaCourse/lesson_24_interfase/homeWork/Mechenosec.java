@@ -4,6 +4,7 @@ public class Mechenosec extends Fish{
 
     public Mechenosec(String name){
         super(name);
+        this.name =name;
     }
 
     @Override
