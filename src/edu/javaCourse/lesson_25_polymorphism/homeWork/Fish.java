@@ -1,4 +1,6 @@
-package edu.javaCourse.lesson_24_interfase.homeWork;
+package edu.javaCourse.lesson_25_polymorphism.homeWork;
+
+
 
 public abstract class Fish extends Animal {
     public Fish(String name) {

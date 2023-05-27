@@ -1,10 +1,12 @@
-package edu.javaCourse.lesson_24_interfase.homeWork;
+package edu.javaCourse.lesson_25_polymorphism.homeWork;
+
+
 
 public abstract class Bird extends Animal implements Speakable {
 
     public Bird(String name) {
         super(name);
-        this.name=name;
+        this.name =name;
     }
 
     abstract void fly();

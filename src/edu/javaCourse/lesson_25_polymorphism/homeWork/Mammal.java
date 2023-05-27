@@ -1,4 +1,4 @@
-package edu.javaCourse.lesson_24_interfase.homeWork;
+package edu.javaCourse.lesson_25_polymorphism.homeWork;
 
 public abstract class Mammal extends Animal implements Speakable {
     public Mammal(String name) {

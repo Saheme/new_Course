@@ -1,4 +1,4 @@
-package edu.javaCourse.lesson_24_interfase.homeWork;
+package edu.javaCourse.lesson_25_polymorphism.homeWork;
 
 public class Penguin extends Bird {
 
@@ -13,7 +13,7 @@ public class Penguin extends Bird {
     }
 
     @Override
-    void eat() {
+    public void eat() {
         System.out.println("Penguin lubit est ribu");
     }
 

@@ -1,4 +1,4 @@
-package edu.javaCourse.lesson_24_interfase.homeWork;
+package edu.javaCourse.lesson_25_polymorphism.homeWork;
 
 public interface Speakable {
 

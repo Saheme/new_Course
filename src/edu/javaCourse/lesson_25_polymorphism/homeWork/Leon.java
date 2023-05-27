@@ -1,4 +1,4 @@
-package edu.javaCourse.lesson_24_interfase.homeWork;
+package edu.javaCourse.lesson_25_polymorphism.homeWork;
 
 public class Leon extends Mammal {
     public Leon(String name) {
@@ -11,7 +11,7 @@ public class Leon extends Mammal {
     }
 
     @Override
-    void eat() {
+    public void eat() {
         System.out.println("Lev est myso");
     }
 

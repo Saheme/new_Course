@@ -1,4 +1,4 @@
-package edu.javaCourse.lesson_24_interfase.homeWork;
+package edu.javaCourse.lesson_25_polymorphism.homeWork;
 
 
 public abstract class Animal {
@@ -8,6 +8,6 @@ public abstract class Animal {
         this.name = name;
     }
 
-    abstract void eat();
+    public abstract void eat();
     abstract void sleep();
 }

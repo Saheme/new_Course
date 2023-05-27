@@ -1,6 +1,6 @@
-package edu.javaCourse.lesson_24_interfase.homeWork;
+package edu.javaCourse.lesson_25_polymorphism.homeWork;
 
-public class Mechenosec extends Fish{
+public class Mechenosec extends Fish {
 
     public Mechenosec(String name){
         super(name);
@@ -8,7 +8,7 @@ public class Mechenosec extends Fish{
     }
 
     @Override
-    void eat() {
+    public void eat() {
         System.out.println("Mechenosec ne xishnay riba, i ona est obichniy ribi koem");
     }
 
