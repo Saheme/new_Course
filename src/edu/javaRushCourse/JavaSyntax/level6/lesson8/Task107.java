@@ -29,18 +29,17 @@ public class Task107 {
 
     public static void main(String[] args) {
 
+
         for (int i = 0; i < field.length; i++) {
             Arrays.fill(field[i], empty);
         }
-       String [][] field2 = Arrays.copyOf(field,height);
-        for (int i = 0; i < field2.length; i++) {
-            int a = (int) (Math.random() * 10);
-            field2[i] = new String[a];
-
+        for (int i = 0; i < field.length; i++) {
+            int a = (int) (Math.random() * width);
+            field[i][a] = robotank;
         }
 
 
-        for (String[] symbol : field2) {
+        for (String[] symbol : field) {
             for (String line : symbol) {
                 System.out.print(line);
             }

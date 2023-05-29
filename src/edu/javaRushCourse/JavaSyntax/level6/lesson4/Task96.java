@@ -1,5 +1,6 @@
 package edu.javaRushCourse.JavaSyntax.level6.lesson4;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -23,26 +24,27 @@ public class Task96 {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        String current = null;
         strings = new String[6];
         for (int i = 0; i < strings.length; i++) {
             strings[i] = scan.nextLine();
         }
         for (int i = 0; i < strings.length; i++) {
-            current = strings[i];
-            for (int j = i+1; j < strings.length; j++) {
-
-                if (strings[i] != null && strings[j] != null && strings[j].equals(current)) {
-                    strings[j] = null;
-
+            String current = strings[i];
+            for (int j = i + 1; j < strings.length; j++) {
+                if (current == null) {
+                    break;
                 }
-                        continue;
+                if ( current.equals(strings[j])) {
+                     strings[i] = null;
+                     strings[j] =null;
+                }
+                }
             }
-        }
+
         for (int i = 0; i < strings.length; i++) {
             System.out.print(strings[i] + ", ");
         }
+
     }
 }
 
-//!(strings[i] == null)||

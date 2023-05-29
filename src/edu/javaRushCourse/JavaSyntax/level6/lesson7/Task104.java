@@ -16,10 +16,11 @@ package edu.javaRushCourse.JavaSyntax.level6.lesson7;
 public class Task104 {
     public static int[][] array = new int[5][];
     public static void main(String[] args) {
-        for (int i = 0; i < array.length; i++) {
-          int a = 2 * i + 1;
+        for (int i = 0; i < array.length ; i++) {
+            int size = 2*i+1;
+            array[i] = new int[size];
             for (int j = 0; j < array[i].length; j++) {
-                array[i][j] = 1;
+                array[i][j] = i+j;
             }
         }
 
@@ -31,3 +32,6 @@ public class Task104 {
         }
     }
 }
+
+//    int size = 2*i+1;
+//            array[i] = new int[size];
