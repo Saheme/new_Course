@@ -1,4 +1,4 @@
-package edu.javaCourse.lesson_26.equals.classWork.first;
+package edu.javaCourse.lesson_26.equals.classWork.first.equals;
 
 import java.util.ArrayList;
 
