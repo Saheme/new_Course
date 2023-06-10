@@ -2,6 +2,7 @@ package edu.javaRushCourse.JavaSyntax.level9.lesson2.Task175;
 
 import java.util.Random;
 
+import java.util.Random;
 import static edu.javaRushCourse.JavaSyntax.level9.lesson2.Task175.CosmicAnomaly.*;
 
 /**
@@ -23,34 +24,16 @@ import static edu.javaRushCourse.JavaSyntax.level9.lesson2.Task175.CosmicAnomaly
  */
 public class Task175 {
     public static void main(String[] args) {
+
         Random random = new Random();
-        for (int i = 0; true ; i++) {
-       int myEnter = random.nextInt(upperBound);
-        if (myEnter < lowerBound) {
-            continue;
-        }else {
-           int result = CosmicAnomaly.nextAttempt(myEnter);
-
-
+        for (int i = 0; i < 29; i++) {
+            int x = random.nextInt(upperBound - lowerBound) + lowerBound;
+            int n = nextAttempt(x);
+            if (x == n)
+                break;
         }
-        }
-
     }
 
-    }
-
-//myEnter = random.nextInt(upperBound);
-//        if (myEnter < lowerBound)  continue;
-//        result = CosmicAnomaly.nextAttempt(myEnter);
-//        Как вообще можно было догадаться про
-//        attempt = random.nextInt(upperBound - lowerBound) + lowerBound;
+}
 
 
-//for (int i = 0; true ; i++) {
-//        int result = random.nextInt(lowerBound, upperBound );
-//        nextAttempt(result);
-//        if (nextAttempt(result)==result){
-//        break;
-//        }
-//
-//        }
