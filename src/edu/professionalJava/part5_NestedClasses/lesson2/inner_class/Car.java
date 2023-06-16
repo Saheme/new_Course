@@ -1,22 +1,30 @@
-package edu.professionalJava.nestedClasses.static_nested_class;
+package edu.professionalJava.part5_NestedClasses.lesson2.inner_class;
 
 public class Car {
     String color;
     int countOfDoor;
     Engine engine;
-   private static  int a;
+    private static  int a;
 
-    public Car(String color, int countOfDoor, Engine engine) {
+    public Car(String color, int countOfDoor, int power) {
         this.color = color;
         this.countOfDoor = countOfDoor;
-        this.engine = engine;
+       // this.engine = this.new Engine(200);
+    }
+    public Car(String color, int countOfDoor) {
+        Engine engine1 = new Engine(235);
+        System.out.println(engine1.power);
+        this.color = color;
+        this.countOfDoor = countOfDoor;
+
     }
 
-    private void method(){
-        System.out.println(Engine.countOfObjects);
-        Engine engine1 = new Engine(258);
-        System.out.println(engine1.power);
+    public void setEngine(Engine engine){
+        this.engine = engine;
+
     }
+
+
 
     @Override
     public String toString() {
@@ -27,15 +35,11 @@ public class Car {
                 '}';
     }
 
-    public  static class Engine{
+    public   class Engine{
         int power;
-        static int countOfObjects;
 
         public Engine(int power) {
             this.power = power;
-            System.out.println(a);
-            countOfObjects++;
-            //System.out.println(countOfDoor);
         }
 
         @Override
@@ -49,19 +53,15 @@ public class Car {
 
 class Test{
     public static void main(String[] args) {
-        Car.Engine engine = new Car.Engine(256);
-        System.out.println(engine);
-
-        Car car = new Car("black",4,engine);
+        Car car = new Car("black",4);
         System.out.println(car);
-
-
+        Car.Engine engine = car.new Engine(150);
+        car.setEngine(engine);
+        System.out.println(engine);
+        System.out.println(car);
+        System.out.println("------------------------");
+        Car.Engine engine3 = new Car("Yellow",2).new Engine(350);
+        System.out.println(engine3);
     }
 }
 
-class V extends Car.Engine{
-
-    public V(int power) {
-        super(power);
-    }
-}

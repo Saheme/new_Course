@@ -14,9 +14,9 @@ import java.util.Random;
  * •	Метод toString внутреннего класса RoboZombie должен возвращать строку, содержащую значение переменной destiny.
  * •	Метод main должен вывести в консоль всех робозомби из массива roboZombies.
  */
-public class Cosmoport {
+public class Cosmoport260 {
     public static Compiler COMPILER = new Compiler();
-    public static RoboZombie[] roboZombies = Cosmoport.RoboZombieFactory.produce();
+    public static RoboZombie[] roboZombies = Cosmoport260.RoboZombieFactory.produce();
 
     public static void main(String[] args) {
 
@@ -36,7 +36,7 @@ public class Cosmoport {
             RoboZombie[] army = new RoboZombie[new Random().nextInt(100)];
             for (int i = 0; i < army.length; i++) {
                 army[i] = new RoboZombie();
-                Cosmoport.COMPILER.compile(army[i]);
+                Cosmoport260.COMPILER.compile(army[i]);
             }
 
             return army;

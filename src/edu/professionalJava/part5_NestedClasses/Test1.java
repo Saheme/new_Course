@@ -1,4 +1,4 @@
-package edu.professionalJava.nestedClasses;
+package edu.professionalJava.part5_NestedClasses;
 
 public class Test1 {
     static class A{ }
