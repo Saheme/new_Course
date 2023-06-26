@@ -27,9 +27,16 @@ public class Task191 {
     }
 
     public static Nimrod[] dealWithDuplicates(Diego[] diegos) {
-        Diego[]diegos1 =new Diego[diegos.length];
-
-
-        return null;
+        int[] pass = new int[diegos.length];
+        Nimrod[] nimrods = new Nimrod[diegos.length];
+        for (int i = 0; i < nimrods.length; i++) {
+            pass[i] = Math.abs( (int) (Math.random() * Integer.MAX_VALUE));
+            diegos[i].hashSum ^= pass[i];
+        }
+        for (int i = 0; i < diegos.length; i++) {
+            nimrods[i] = new Nimrod();
+            nimrods[i].password = pass[i];
+        }
+        return nimrods;
     }
 }

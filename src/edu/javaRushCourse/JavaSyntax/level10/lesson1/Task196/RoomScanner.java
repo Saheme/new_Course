@@ -9,7 +9,7 @@ public class RoomScanner {
     public static String[] scanRoom(String roomName) {
         System.out.printf("Сканируется %s...\n", roomName);
 
-        String[] room = Task196.NimrodAi.getRoomByName(roomName);
+        String[] room = NimrodAi.getRoomByName(roomName);
         if (room == null || random.nextBoolean()) {
             return room;
         }
