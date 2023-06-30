@@ -9,9 +9,9 @@ public enum Error {
     private final int errorCode;
     private static final Map<Integer,Error> errorMap =new HashMap<>();
     static {
-        Error[]array = Error.values();
-        for (int i = 0; i < array.length; i++) {
-        errorMap.put()
+
+        for (Error error : Error.values()) {
+            errorMap.put(error.getErrorCode(), error);
         }
 
         }
@@ -32,8 +32,9 @@ public enum Error {
 
     public Map<Integer, Error> getErrorMap() { return errorMap; }
 
-    @Override
-    public String toString() {
-        return String.format("Error{ errorCode = %s }", errorCode);
-    }
+//    @Override
+//    public String toString() {
+//        //return String.format("Error{ errorCode = %s }", errorCode);
+//        return Error.errorMap.get(errorCode).name();
+//    }
 }

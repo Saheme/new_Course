@@ -1,4 +1,4 @@
-package edu.professionalJava.part11;
+package edu.professionalJava.part11_Enum;
 
 import java.util.Arrays;
 
