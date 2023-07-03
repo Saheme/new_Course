@@ -1,4 +1,4 @@
-package edu.javaCourse.lesson_27_Exeptions;
+package edu.javaCourse.lesson_27_Exeptions.AlishevLessons;
 
 import java.io.File;
 import java.io.FileNotFoundException;
