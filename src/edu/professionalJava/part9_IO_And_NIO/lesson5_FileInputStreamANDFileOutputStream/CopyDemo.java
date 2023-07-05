@@ -5,12 +5,12 @@ import java.io.*;
 public class CopyDemo {
     public static void main(String[] args) {
         try
-                (FileInputStream fileInputStream = new FileInputStream("E:\\Java\\logo_java.jpg");
-                 FileOutputStream fileOutputStream = new FileOutputStream("logo_java.jpg"))
+                (FileInputStream input = new FileInputStream("E:\\Java\\logo_java.jpg");
+                 FileOutputStream output = new FileOutputStream("logo_java.jpg"))
                  {
                      int i;
-                     while ((i=fileInputStream.read())!=-1){
-                        fileOutputStream.write(i);
+                     while ((i=input.read())!=-1){
+                        output.write(i);
                  }
                      System.out.println("Done!");
 
