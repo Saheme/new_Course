@@ -1,8 +1,10 @@
 package edu.javaRushCourse.JavaSyntax.level16.lesson2;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
 
 /**
@@ -52,21 +54,21 @@ public class Task352 {
     }
 
     public static List<String> decodeSources(String fileName, char[] array) throws IOException {
-        fileName = "test.txt";
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
-       BufferedReader reader =new BufferedReader(new FileReader(fileName)) ) {
-            writer.write(array);
-            List<String> list = Files.readAllLines(Path.of(fileName));
-            for (String element : list) {
-                char[] elements = element.toCharArray();
-                for (char eachelement : elements) {
-                    System.out.print(eachelement);
+        try (FileWriter fw = new FileWriter(fileName, StandardCharsets.UTF_8);
+             BufferedWriter writer = new BufferedWriter(fw)) {
+            for (char c : array) {
+                writer.append(c);
+                if (c == 'm') {
+                    writer.append("\n");
                 }
             }
-                return list;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return Files.readAllLines(Paths.get(fileName));
 
 
         }
 
     }
-}
+
